@@ -2,6 +2,8 @@
 
 Demonstração pública e isolada de um gerenciador de equipes e projetos. Pessoas, tarefas e organizações exibidas são fictícias. As alterações ficam apenas no navegador.
 
+O TeamLink reúne Kanban, cronograma, matriz GUT, Ishikawa, projetos, pessoas e equipes, calendário, conversas locais, relatórios e exportação/importação de backup. As funções aproveitadas do antigo protótipo SGPI foram incorporadas sob o nome e a identidade visual do TeamLink; a demonstração não cria uma segunda marca ou um segundo produto.
+
 ## Testar
 
 [Abrir a demonstração no portfólio](https://heitt.portalsgi.dev.br/teamlink-demo/)

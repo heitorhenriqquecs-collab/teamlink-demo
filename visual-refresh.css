@@ -44,3 +44,47 @@ footer{border-color:#394651;color:#a8b7bf}.mobile-nav a{border-color:#52616b;bac
 :focus-visible{outline-color:#45e85f}
 @media(max-width:980px){.topbar{background:#171f25}}
 @media(max-width:650px){.metrics article{border-color:#394651}}
+
+/* Funções reunidas no TeamLink: projetos, equipe, calendário e indicadores. */
+.sidebar{overflow-y:auto;scrollbar-width:thin}
+.project-picker-label{margin:-8px 0 -13px 8px;color:#9dafb7;font-size:10px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+.project-switcher,.mobile-project-picker select{width:100%;min-height:40px;padding:8px 10px;border:1px solid #52616b;border-radius:6px;background:#27313a;color:#eef3f6}
+.project-switcher{margin-bottom:3px}
+.mobile-project-picker{display:none}
+.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:18px}
+.feature-card{display:grid;gap:13px;align-content:start}
+.feature-card.selected{border-color:#428e58}
+.feature-card h3,.feature-form h3,.feature-form h4{margin:0;color:#eef3f6}
+.feature-card p{margin:0;color:#b4c0c7;line-height:1.55}
+.feature-card small{color:#aebac2}
+.feature-card .button{justify-self:start;margin-top:8px}
+.feature-form{display:grid;gap:15px;margin-top:18px}
+.feature-form .form-row{display:flex;align-items:end;gap:12px;flex-wrap:wrap}
+.feature-form label{display:grid;gap:7px;flex:1 1 180px;color:#c3cdd2;font-size:12px;font-weight:650}
+.feature-form :is(input,textarea,select){width:100%;min-height:42px;padding:10px;border:1px solid #566570;border-radius:6px;background:#1d282f;color:#eef3f6}
+.feature-form textarea{min-height:100px;resize:vertical}
+.feature-form .button{min-height:42px}
+#member-list .team-person select{width:min(42%,190px);margin-left:auto;padding:7px;border:1px solid #566570;border-radius:6px;background:#1d282f;color:#eef3f6;font-size:11px}
+.calendar-controls{display:flex;align-items:center;gap:12px;text-transform:capitalize}
+.calendar-controls .button{min-width:42px}
+.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));overflow:hidden;border:1px solid #394651;border-radius:8px;background:#27313a}
+.calendar-weekday{padding:12px 6px;border-bottom:1px solid #394651;color:#b4c0c7;text-align:center;font-size:11px}
+.calendar-cell{min-height:104px;padding:10px;border-right:1px solid #394651;border-bottom:1px solid #394651;overflow:hidden}
+.calendar-cell:nth-child(7n){border-right:0}
+.calendar-cell.outside{background:#202a32}
+.calendar-cell.today{background:#1d3b2a}
+.calendar-cell>span{display:block;margin-bottom:8px;font-weight:800}
+.calendar-cell small{display:block;margin:4px 0;padding:4px 5px;border-radius:4px;background:#183525;color:#d8ffe1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px}
+.calendar-agenda{margin-top:16px}.calendar-agenda h3{margin:0 0 12px}
+.conversation-list{display:grid;gap:12px;max-height:440px;overflow-y:auto}
+.conversation-item{padding:15px;border:1px solid #394651;border-radius:7px;background:#202a32}
+.conversation-item small{color:#8eaa99}.conversation-item p{margin:7px 0 0;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}
+.report-row{display:flex;align-items:center;gap:12px;min-height:44px;border-top:1px solid #394651;font-size:12px}
+.report-row>span{flex:0 0 125px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.report-row>strong{margin-left:auto;color:#eef3f6}
+.report-track{flex:1;height:8px;border-radius:99px;background:#1d242b;overflow:hidden}.report-track b{display:block;height:100%;border-radius:99px;background:#45e85f}
+.data-panel{display:grid;gap:12px;max-width:760px}.data-panel p{margin:0;color:#b4c0c7;line-height:1.55}.data-panel small{color:#9daeb7}
+.data-actions{display:flex;gap:10px;flex-wrap:wrap}.data-actions input{display:none}
+:is(.project-switcher,.mobile-project-picker select,.feature-form input,.feature-form textarea,.feature-form select,#member-list select):focus-visible{outline:2px solid #45e85f;outline-offset:2px}
+@media(max-width:980px){.mobile-project-picker{display:grid;gap:7px;margin-bottom:20px;color:#b4c0c7;font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.08em}}
+@media(max-width:650px){.feature-grid{grid-template-columns:1fr}.calendar-controls{width:100%;justify-content:space-between}.calendar-grid{overflow-x:auto}.calendar-weekday,.calendar-cell{min-width:48px}.calendar-cell{min-height:70px;padding:6px}.calendar-cell small{font-size:9px}.section-heading:has(.calendar-controls){flex-direction:column;align-items:stretch}#member-list .team-person{flex-wrap:wrap}#member-list .team-person select{width:100%;margin-left:48px}}
