@@ -88,3 +88,10 @@ footer{border-color:#394651;color:#a8b7bf}.mobile-nav a{border-color:#52616b;bac
 :is(.project-switcher,.mobile-project-picker select,.feature-form input,.feature-form textarea,.feature-form select,#member-list select):focus-visible{outline:2px solid #45e85f;outline-offset:2px}
 @media(max-width:980px){.mobile-project-picker{display:grid;gap:7px;margin-bottom:20px;color:#b4c0c7;font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.08em}}
 @media(max-width:650px){.feature-grid{grid-template-columns:1fr}.calendar-controls{width:100%;justify-content:space-between}.calendar-grid{overflow-x:auto}.calendar-weekday,.calendar-cell{min-width:48px}.calendar-cell{min-height:70px;padding:6px}.calendar-cell small{font-size:9px}.section-heading:has(.calendar-controls){flex-direction:column;align-items:stretch}#member-list .team-person{flex-wrap:wrap}#member-list .team-person select{width:100%;margin-left:48px}}
+
+/* Titulação mais aberta para leitura em telas grandes e pequenas. */
+.brand strong{letter-spacing:-.025em}
+.hero h1{letter-spacing:-.035em;line-height:1.1}
+.section-heading h2{letter-spacing:-.02em;line-height:1.16}
+.metrics strong{letter-spacing:-.025em}
+.panel-title h3,.cause-form h3,.dialog-head h2{letter-spacing:-.015em}
