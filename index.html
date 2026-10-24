@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1921">
+  <meta name="description" content="Demonstração interativa do TeamLink: organize atividades, responsáveis e prioridades em um projeto fictício.">
+  <link rel="icon" type="image/png" href="brand.png">
+  <link rel="stylesheet" href="styles.css?v=1">
+  <title>Experimente o TeamLink — demonstração</title>
+  <script src="app.js?v=1" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <div class="demo-shell">
+    <aside class="sidebar" aria-label="Navegação da demonstração">
+      <a class="brand" href="#visao-geral" aria-label="TeamLink — visão geral"><img src="brand.png" alt=""><span><strong>Team<span>Link</span></strong><small>ESPAÇOS · EQUIPES · PROJETOS</small></span></a>
+      <div class="demo-label"><span class="signal"></span> AMBIENTE DE DEMONSTRAÇÃO</div>
+      <p class="sidebar-heading">PROJETO</p>
+      <div class="workspace-card"><span class="workspace-glyph">EA</span><span><strong>Estúdio Aurora</strong><small>Lançamento do aplicativo</small></span></div>
+      <p class="sidebar-heading">FERRAMENTAS</p>
+      <nav class="side-nav" aria-label="Ferramentas">
+        <a href="#visao-geral" data-view="visao-geral"><span class="nav-icon">01</span> Visão geral</a>
+        <a href="#kanban" data-view="kanban"><span class="nav-icon">02</span> Kanban</a>
+        <a href="#cronograma" data-view="cronograma"><span class="nav-icon">03</span> Cronograma</a>
+        <a href="#prioridades" data-view="prioridades"><span class="nav-icon">04</span> Matriz GUT</a>
+        <a href="#ishikawa" data-view="ishikawa"><span class="nav-icon">05</span> Ishikawa</a>
+      </nav>
+      <div class="sidebar-footer"><p>Esta simulação usa pessoas e tarefas fictícias. Suas alterações ficam somente neste navegador.</p><a href="https://portalsgi.dev.br/login" target="_blank" rel="noopener noreferrer">Conhecer o TeamLink completo ↗</a><br><a href="../legal/">Privacidade e termos</a></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><span>TL<span class="green">.</span> <span class="crumb">/ Estúdio Aurora / Demonstração</span></span><a href="../#projetos">Voltar ao portfólio ↗</a></header>
+      <main id="main">
+        <div class="hero"><div><span class="kicker"><span class="signal"></span> EXPERIMENTE NA PRÁTICA</span><h1>Um projeto em movimento.</h1><p>Arraste cartões, atribua responsáveis e acompanhe o trabalho em diferentes ferramentas. Tudo aqui é fictício.</p></div><div class="hero-actions"><button id="reset-demo" class="button subtle" type="button">Reiniciar demonstração</button><button id="new-task" class="button primary" type="button">+ Nova atividade</button></div></div>
+        <nav class="mobile-nav" aria-label="Ferramentas no celular"><a href="#visao-geral" data-view="visao-geral">Visão geral</a><a href="#kanban" data-view="kanban">Kanban</a><a href="#cronograma" data-view="cronograma">Cronograma</a><a href="#prioridades" data-view="prioridades">Matriz GUT</a><a href="#ishikawa" data-view="ishikawa">Ishikawa</a></nav>
+        <section class="view" id="visao-geral" aria-labelledby="overview-title"><div class="section-heading"><div><span class="kicker">PANORAMA</span><h2 id="overview-title">Visão geral</h2><p>O que a equipe precisa fazer e o que já avançou.</p></div></div><div class="metrics"><article><span>ATIVIDADES</span><strong id="metric-total">0</strong><small>no projeto</small></article><article><span>EM ANDAMENTO</span><strong id="metric-doing">0</strong><small>trabalhos ativos</small></article><article><span>CONCLUÍDAS</span><strong id="metric-done">0</strong><small>etapas entregues</small></article><article><span>PROGRESSO</span><strong id="metric-progress">0%</strong><small>do quadro concluído</small></article></div><div class="overview-grid"><section class="panel"><div class="panel-title"><h3>Próximas entregas</h3><span>ATUALIZA EM TEMPO REAL</span></div><div id="next-tasks" class="next-list"></div></section><section class="panel"><div class="panel-title"><h3>Sua equipe</h3><span>3 PESSOAS</span></div><div class="team-person"><span>LC</span><div><strong>Lia Costa</strong><small>Coordenação</small></div></div><div class="team-person"><span>BL</span><div><strong>Bruno Lima</strong><small>Design</small></div></div><div class="team-person"><span>NR</span><div><strong>Nina Reis</strong><small>Desenvolvimento</small></div></div></section></div></section>
+        <section class="view" id="kanban" aria-labelledby="kanban-title"><div class="section-heading"><div><span class="kicker">FLUXO DO TRABALHO</span><h2 id="kanban-title">Kanban</h2><p>Arraste um cartão para outra etapa. No celular, use o seletor “Etapa” em cada atividade.</p></div><button class="button primary add-task" type="button">+ Nova atividade</button></div><div id="board" class="board" aria-live="polite"></div></section>
+        <section class="view" id="cronograma" aria-labelledby="timeline-title"><div class="section-heading"><div><span class="kicker">TEMPO E ENTREGAS</span><h2 id="timeline-title">Cronograma</h2><p>Uma leitura rápida dos prazos definidos no Kanban.</p></div></div><div class="panel"><div id="timeline" class="timeline"></div></div></section>
+        <section class="view" id="prioridades" aria-labelledby="gut-title"><div class="section-heading"><div><span class="kicker">DECISÃO COM CRITÉRIO</span><h2 id="gut-title">Matriz GUT</h2><p>Ajuste gravidade, urgência e tendência. A pontuação ajuda a ordenar o que pede atenção.</p></div></div><div class="panel"><div id="gut-list" class="gut-list"></div></div></section>
+        <section class="view" id="ishikawa" aria-labelledby="ishikawa-title"><div class="section-heading"><div><span class="kicker">ENTENDER AS CAUSAS</span><h2 id="ishikawa-title">Ishikawa</h2><p>Mapeie fatores que podem atrasar o lançamento do aplicativo.</p></div></div><div class="problem"><span>PROBLEMA INVESTIGADO</span><strong>Atraso no lançamento</strong></div><div id="cause-grid" class="cause-grid"></div><form id="cause-form" class="panel cause-form"><h3>Adicionar uma causa</h3><div><label>Categoria<select name="category"><option value="Pessoas">Pessoas</option><option value="Processos">Processos</option><option value="Ferramentas">Ferramentas</option><option value="Materiais">Materiais</option><option value="Ambiente">Ambiente</option><option value="Gestão">Gestão</option></select></label><label>O que pode estar causando o atraso?<input name="description" required minlength="3" maxlength="120" placeholder="Ex.: dependência sem responsável"></label><button class="button primary" type="submit">Adicionar causa</button></div></form></section>
+      </main>
+      <footer>TeamLink · demonstração com dados fictícios <span>Alterações salvas apenas no seu navegador. <a href="../legal/">Privacidade e termos</a></span></footer>
+    </div>
+  </div>
+  <dialog id="task-dialog"><form id="task-form"><div class="dialog-head"><div><span class="kicker">NOVA ATIVIDADE</span><h2>O que precisa ser feito?</h2></div><button class="close" id="close-dialog" type="button" aria-label="Fechar">×</button></div><p>Use dados fictícios. A atividade fica salva somente neste navegador.</p><label>Título<input name="title" required minlength="3" maxlength="90" placeholder="Ex.: Revisar telas do aplicativo"></label><div class="form-grid"><label>Responsável<select name="assignee"><option value="">Atribuir depois</option><option>Lia Costa</option><option>Bruno Lima</option><option>Nina Reis</option></select></label><label>Prazo<input name="due" type="date" required></label></div><button class="button primary" type="submit">Criar atividade</button></form></dialog>
+  <div id="announcement" class="visually-hidden" role="status" aria-live="polite"></div>
+</body>
+</html>
