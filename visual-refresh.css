@@ -21,3 +21,26 @@ dialog{border-color:#cbd5dd;border-radius:9px;background:#fff;color:#1b2c3e;box-
 footer{border-color:#dce1e5;color:#6e7d88}.mobile-nav a{border-color:#d5dce4;background:#fff;color:#405061}.mobile-nav a.active{border-color:#4058cf;background:#4058cf;color:#fff}
 @media(max-width:980px){.demo-shell{display:block}.topbar{background:#fff}}
 @media(max-width:650px){.metrics article{border-color:#dce1e5}.hero h1{font-size:clamp(36px,10vw,50px)}.overview-grid{grid-template-columns:1fr}}
+
+/* Marca padrão: grafite, azul ardósia e verde vivo. */
+:root{color-scheme:dark;--bg:#1d242b;--sidebar:#171f25;--surface:#27313a;--surface-2:#202a32;--line:#394651;--ink:#eef3f6;--muted:#aebac2;--aqua:#45e85f;--green:#45e85f;--action:#22934c;--warn:#e2bc73}
+body,.workspace,.workspace main{background:#1d242b;color:#eef3f6}
+.sidebar{border-color:#394651;background:#171f25}.brand strong{color:#eef3f6}.brand strong span{color:#45e85f}.brand small{color:#9cabaa}
+.demo-label{background:#183525;color:#8cf39c}.signal{background:#45e85f}.sidebar-heading{color:#899ba3}
+.workspace-card{border-color:#394651;background:#27313a}.workspace-glyph{background:#183525;color:#7def91}.workspace-card strong{color:#eef3f6}.workspace-card small{color:#aebac2}
+.side-nav a{color:#bdc9cf}.side-nav a:hover,.side-nav a.active{border-color:#365b43;background:#183525;color:#ddffe3}.side-nav a.active{box-shadow:inset 3px 0 #45e85f}.nav-icon,.side-nav a.active .nav-icon{color:#74e68a}
+.sidebar-footer{border-color:#394651}.sidebar-footer p{color:#aebac2}.sidebar-footer a{color:#72eb89}
+.topbar{border-color:#394651;background:#171f25;color:#eef3f6}.topbar .green,.topbar a{color:#45e85f}.topbar .crumb{color:#acbac2}
+.hero{border-color:#394651}.hero h1,.section-heading h2{color:#f2f6f8}.hero p,.section-heading p{color:#b4c0c7}.kicker{color:#71ec89}
+.button{border-color:#52616b;background:#27313a;color:#eef3f6}.button:hover{border-color:#45e85f;background:#30423a;color:#fff}.button.primary{border-color:#45e85f;background:#45e85f;color:#102016}.button.primary:hover{background:#73f487;color:#102016}.button.subtle{background:#27313a}
+.metrics{border-color:#394651;background:#27313a;box-shadow:none}.metrics article{border-color:#394651}.metrics span,.panel-title span,.problem span{color:#b5c3cb}.metrics strong{color:#f3f7f8}.metrics small{color:#aebac2}
+.panel{border-color:#394651;background:#27313a;box-shadow:none}.panel-title h3,.cause-form h3{color:#f2f6f8}.next-row,.team-person{border-color:#394651}.next-row strong,.team-person strong{color:#eaf1f4}.next-row small,.team-person small{color:#acb9c1}.next-row>span{color:#72eb89}.team-person>span{background:#183525;color:#7def91}
+.lane{border-color:#394651;background:#202a32}.lane.drop-target{border-color:#45e85f;background:#1e3b2c}.lane-head{border-color:#394651;background:#26343a}.lane-head h3{color:#eef3f6}.lane-head span{background:#183525;color:#75e98a}.task-card{border-color:#45535d;background:#2c3840;color:#eef3f6}.task-card:hover{border-color:#45e85f}.task-card-top span,.task-card-meta,.task-card label{color:#b8c5cc}.priority{background:#4d4130;color:#f0d48e}.priority.high{background:#4c3030;color:#ffc0b2}.priority.low{background:#183525;color:#91efa4}
+.task-card select,dialog select,dialog input,.cause-form select,.cause-form input,.gut-row select{border-color:#566570;background:#1d282f;color:#eef3f6}
+.timeline-head,.timeline-row{border-color:#394651;color:#b4c2c9}.timeline-cell{border-color:#394651}.timeline-dot{background:#557464}.timeline-dot.due{background:#45e85f}.timeline-note{color:#afbec6}.gut-row{border-color:#394651}.gut-row label,.cause-form label,dialog label{color:#c3cdd2}.gut-row output{color:#76ec8c}
+.problem,.cause-category{border-color:#394651;background:#27313a}.problem strong,.cause-category h3{color:#eef3f6}.cause-category ul{color:#c7d2d7}.cause-category .none{color:#aebac2}
+dialog{border-color:#52616b;background:#27313a;color:#eef3f6;box-shadow:0 26px 80px #0009}dialog::backdrop{background:#0c141acc}.close{border-color:#52616b;background:#36434b;color:#fff}
+footer{border-color:#394651;color:#a8b7bf}.mobile-nav a{border-color:#52616b;background:#27313a;color:#d5e1e5}.mobile-nav a.active{border-color:#45e85f;background:#183525;color:#a5f5af}
+:focus-visible{outline-color:#45e85f}
+@media(max-width:980px){.topbar{background:#171f25}}
+@media(max-width:650px){.metrics article{border-color:#394651}}
